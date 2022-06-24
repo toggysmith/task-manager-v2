@@ -1,5 +1,6 @@
 {
-  "name": "video-finder",
+  "name": "task-manager",
+  "homepage": "https://toggysmith.github.io/task-manager-v2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
