@@ -6,7 +6,6 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import ColorButton from "./ColorButton";
-import SettingsButton from "./SettingsButton";
 import InfoButton from "./InfoButton";
 
 export default function Navbar() {
@@ -20,7 +19,6 @@ export default function Navbar() {
       <Spacer />
       <HStack spacing={2}>
         <ColorButton />
-        <SettingsButton />
         <InfoButton />
       </HStack>
     </Flex>
