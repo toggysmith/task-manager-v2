@@ -14,10 +14,12 @@ import { useForm } from "react-hook-form";
 export default function AddTaskCard({ addTask }) {
   const bgColor = useColorModeValue("gray.300", "gray.600");
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const handleAddTask = (data) => {
     let { title, description, isImportant } = data;
+
+    reset();
 
     addTask(title, description, isImportant, Date.now());
   };
