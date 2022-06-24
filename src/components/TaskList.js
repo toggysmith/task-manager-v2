@@ -19,13 +19,13 @@ export default function TaskList() {
 
   const addTask = (title, description, isImportant, id) => {
     setTasks([
-      ...tasks,
       {
         title,
         description,
         isImportant,
         id,
       },
+      ...tasks,
     ]);
   };
 
