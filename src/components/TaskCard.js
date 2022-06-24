@@ -36,7 +36,7 @@ export default function TaskCard({
         <Box>
           {isImportant ? <Badge colorScheme="red">IMPORTANT</Badge> : null}
           <Heading size="lg">{title}</Heading>
-          <Text>{description}</Text>
+          <Text whiteSpace="pre-wrap">{description}</Text>
         </Box>
         <Spacer />
         <ButtonGroup size="sm">
