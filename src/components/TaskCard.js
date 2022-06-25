@@ -3,7 +3,6 @@ import {
   Heading,
   Text,
   HStack,
-  VStack,
   Spacer,
   ButtonGroup,
   IconButton,
@@ -39,10 +38,7 @@ export default function TaskCard({
           <Text whiteSpace="pre-wrap">{description}</Text>
         </Box>
         <Spacer />
-        <ButtonGroup size="sm">
-          <IconButton icon={<FaPencilAlt />} />
-          <IconButton icon={<FaTrash />} onClick={() => removeTask(id)} />
-        </ButtonGroup>
+        <IconButton icon={<FaTrash />} onClick={() => removeTask(id)} />
       </HStack>
     </Box>
   );

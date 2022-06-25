@@ -6,6 +6,7 @@ import {
   VStack,
   Divider,
   useColorModeValue,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import TaskCard from "./TaskCard";
@@ -28,6 +29,8 @@ export default function TaskList() {
       ...tasks,
     ]);
   };
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const removeTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
